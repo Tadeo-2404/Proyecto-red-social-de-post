@@ -1,0 +1,1 @@
+const editarIcono=document.querySelectorAll(".edit-img");function inciarApp(){editarIcono.forEach((function(e){e.addEventListener("click",e=>{e.target.previousElementSibling.readOnly=!1})}))}document.addEventListener("DOMContentLoaded",()=>{inciarApp()});

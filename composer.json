@@ -1,0 +1,24 @@
+{
+    "name": "tadeo/login",
+    "description": "Proyecto MVC",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "MVC\\": "./",
+            "Model\\": "./models",
+            "Controller\\": "./controllers",
+            "Classes\\": "./classes"
+        }
+    },
+    "authors": [
+        {
+            "name": "Tadeo Alvarez",
+            "email": "tadeo.regalado.alvarez@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.6",
+        "intervention/image": "^2.7",
+        "vlucas/phpdotenv": "^5.4"
+    }
+}
