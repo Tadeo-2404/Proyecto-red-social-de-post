@@ -122,6 +122,11 @@ class ActiveRecord {
         return array_shift( $resultado ) ;
     }
     
+    public static function whereWithoutFormat($columna, $valor) {
+        $query = "SELECT * FROM " . static::$tabla  ." WHERE ${columna} = '${valor}'";
+        $resultado = self::consultarSQL($query);
+        return $resultado;
+    }
 
     // Obtener Registros con cierta cantidad
     public static function get($limite) {

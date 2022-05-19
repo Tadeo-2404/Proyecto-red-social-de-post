@@ -20,7 +20,7 @@
     </div>
     <div class="field">
         <label for="telefono">Telefono</label>
-        <input type="tel" placeholder="Tu Telefono" name="telefono" id="telefono" value="<?php echo $usuario->telefono ?>">
+        <input type="tel" placeholder="Tu Telefono" name="telefono" id="telefono" maxlength="10" minlength="10" value="<?php echo $usuario->telefono ?>">
     </div>
     <div class="field">
         <label for="contraseña">Contraseña</label>

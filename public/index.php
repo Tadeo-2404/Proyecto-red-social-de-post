@@ -44,8 +44,18 @@ $router->get('/mensajeRestablecido', [LoginController::class, 'mensajeRestableci
 //links privados
 $router->get('/pagina-principal', [ClienteController::class, 'paginaPrincipal']);
 $router->post('/pagina-principal', [ClienteController::class, 'paginaPrincipal']);
+
 $router->get('/mi-cuenta', [ClienteController::class, 'miCuenta']);
 $router->post('/mi-cuenta', [ClienteController::class, 'miCuenta']);
+
+$router->get('/mis-post', [ClienteController::class, 'miCuentaPost']);
+$router->post('/mis-post', [ClienteController::class, 'miCuentaPost']);
+
+$router->get('/editar-post', [ClienteController::class, 'editarPost']);
+$router->post('/editar-post', [ClienteController::class, 'editarPost']);
+
+$router->get('/borrar-cuenta', [ClienteController::class, 'borrarCuenta']);
+$router->post('/borrar-cuenta', [ClienteController::class, 'borrarCuenta']);
 
 // Comprueba y valida las rutas, que existan y les asigna las funciones del Controlador
 $router->comprobarRutas();
